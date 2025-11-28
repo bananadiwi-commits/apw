@@ -1,0 +1,44 @@
+/* Estilo general de la tabla */
+table {
+    border-collapse: collapse; /* Bordes simples */
+    width: 100%; /* Opcional: ajusta el ancho */
+    font-family: Arial, sans-serif; /* Fuente legible */
+}
+
+/* Estilo para todas las celdas (encabezado y datos) */
+th, td {
+    border: 1px solid #777777; /* Borde gris sutil */
+    padding: 6px 10px; /* Relleno */
+    text-align: right; /* Alineación del texto a la derecha (para los números) */
+}
+
+/* Estilo para el encabezado de la tabla */
+thead {
+    background-color: #cccccc; /* Color de fondo gris claro para el encabezado */
+    font-weight: bold; /* Texto en negrita para el encabezado */
+    text-align: center; /* Centrar el texto en el encabezado */
+}
+
+/* Estilo para la primera columna (el nombre del cambio), para alinear a la izquierda */
+tbody td:first-child {
+    text-align: left;
+    font-weight: bold; /* Opcional: para que se destaque un poco */
+}
+
+/* Colores de fondo para las filas (efecto cebra) */
+.fondo-claro {
+    background-color: #ffffcc; /* Amarillo pálido para filas claras (como se ve en la imagen) */
+}
+
+.fondo-oscuro {
+    background-color: #ddf0dd; /* Verde pálido para filas oscuras (como se ve en la imagen) */
+}
+
+/* Colores de fuente para las columnas Máximo y Mínimo */
+.maximo {
+    color: green; /* Texto verde para los valores máximos */
+}
+
+.minimo {
+    color: brown; /* Texto marrón/rojo para los valores mínimos */
+}

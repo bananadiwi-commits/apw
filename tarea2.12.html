@@ -1,0 +1,92 @@
+<link rel="stylesheet" href="ejercicio2.12.css">
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Alta</title>
+    <link rel="stylesheet" href="styles.css"> </head>
+<body>
+
+<form class="formulario-alta">
+    <h1>Formulario de alta</h1>
+
+    <div class="form-container">
+
+        <div class="left-column">
+            
+            <label class="group-label">Nombre y apellidos <span class="required">*</span></label>
+            <div class="input-field">
+                <input type="text" id="nombre">
+                <small class="hint">Nombre</small>
+            </div>
+            <div class="input-field">
+                <input type="text" id="primer-apellido">
+                <small class="hint">Primer apellido</small>
+            </div>
+            <div class="input-field">
+                <input type="text" id="segundo-apellido">
+                <small class="hint">Segundo apellido</small>
+            </div>
+
+            <label class="group-label">Email</label>
+            <div class="input-field">
+                <input type="email" id="email">
+            </div>
+        </div>
+
+        <div class="right-column">
+            
+            <label class="group-label">Dirección <span class="required">*</span></label>
+            <div class="input-field">
+                <input type="text" id="calle" placeholder="Calle, número, piso, puerta">
+                <small class="hint">Calle, número, piso, puerta</small>
+            </div>
+
+            <div class="input-row">
+                <div class="input-field half-width">
+                    <input type="text" id="codigo-postal">
+                    <small class="hint">Código postal</small>
+                </div>
+                <div class="input-field half-width">
+                    <input type="text" id="municipio">
+                    <small class="hint">Municipio</small>
+                </div>
+            </div>
+            
+            <div class="input-row">
+                <div class="input-field half-width">
+                    <select id="provincia">
+                        <option value="">Provincia</option>
+                        </select>
+                    <small class="hint">Provincia</small>
+                </div>
+                <div class="input-field half-width">
+                    <select id="pais">
+                        <option value="">País</option>
+                        </select>
+                    <small class="hint">País</small>
+                </div>
+            </div>
+
+            <label class="group-label">Teléfono <span class="required">*</span></label>
+            <div class="input-row">
+                <div class="input-field half-width">
+                    <input type="tel" id="fijo">
+                    <small class="hint">Fijo</small>
+                </div>
+                <div class="input-field half-width">
+                    <input type="tel" id="movil">
+                    <small class="hint">Móvil</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="submit-container">
+        <button type="submit" class="boton-alta">Darme de alta →</button>
+    </div>
+</form>
+
+</body>
+</html>

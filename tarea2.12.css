@@ -1,0 +1,118 @@
+
+/* ------------------------------------------- */
+/* 1. Estilos Base y Tipografía                */
+/* ------------------------------------------- */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.formulario-alta {
+    max-width: 800px;
+    margin: 0 auto; /* Centra el formulario en la página */
+}
+
+h1 {
+    font-size: 1.5em;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+/* ------------------------------------------- */
+/* 2. Disposición en Columnas (CSS Grid)       */
+/* ------------------------------------------- */
+.form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Crea dos columnas de igual ancho */
+    gap: 40px; /* Espacio entre las columnas */
+}
+
+/* ------------------------------------------- */
+/* 3. Etiquetas de Grupo y Campos Requeridos   */
+/* ------------------------------------------- */
+.group-label {
+    display: block;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-top: 20px; /* Espaciado antes de cada grupo */
+    margin-bottom: 5px;
+}
+
+.group-label:first-child {
+    margin-top: 0; /* Elimina el margen superior para la primera etiqueta de cada columna */
+}
+
+.required {
+    color: red;
+    font-weight: bold;
+}
+
+/* ------------------------------------------- */
+/* 4. Inputs, Selects y Hints                  */
+/* ------------------------------------------- */
+
+/* Contenedor de cada campo y su hint */
+.input-field {
+    margin-bottom: 15px;
+}
+
+/* Estilo de los campos de input y select */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* Asegura que el padding no aumente el ancho total */
+}
+
+/* Estilo para los textos de ayuda (hints: Nombre, Fijo, Calle...) */
+.hint {
+    display: block;
+    font-size: 0.8em;
+    color: #666;
+    margin-top: 2px;
+}
+
+/* ------------------------------------------- */
+/* 5. Campos en Fila (Flexbox)                 */
+/* ------------------------------------------- */
+.input-row {
+    display: flex;
+    gap: 10px; /* Espacio entre los campos en la misma fila */
+    margin-bottom: 15px;
+}
+
+/* Los campos de la fila ocupan la mitad del espacio */
+.half-width {
+    flex: 1; 
+}
+
+/* ------------------------------------------- */
+/* 6. Botón de Envío                           */
+/* ------------------------------------------- */
+.submit-container {
+    text-align: right; /* Alinea el botón a la derecha */
+    margin-top: 30px;
+    clear: both; /* Evita que el botón flote junto a las columnas */
+}
+
+.boton-alta {
+    /* Colores y bordes para imitar el botón gris de la imagen */
+    background-color: #e0e0e0;
+    color: #333;
+    padding: 10px 20px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1em;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.boton-alta:hover {
+    background-color: #d0d0d0;
+}
