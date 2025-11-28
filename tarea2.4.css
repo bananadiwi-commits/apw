@@ -1,0 +1,90 @@
+/* REINICIO BÁSICO Y REGLAS DE CAJA */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Contenedor Principal */
+#wrapper {
+    width: 960px;
+    margin: 0 auto; 
+    padding: 10px;
+    background-color: #fff;
+}
+
+/*
+ * REGLAS DE BORDE Y LAYOUT
+ */
+
+/* Encabezado: Línea divisoria inferior */
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 15px 0;
+    margin-bottom: 20px;
+    /* BORDE INFERIOR: Línea divisoria */
+    border-bottom: 1px solid #ccc;
+}
+
+/* Contenedor de las Columnas */
+#content-area {
+    overflow: hidden; 
+    /* BORDE COMPLETO: Rodea las tres columnas (visible en la imagen) */
+    border: 1px solid #ccc;
+}
+
+/* Columna Izquierda (200px) */
+#left-sidebar {
+    float: left;
+    width: 200px;
+    padding: 10px;
+    /* BORDE DERECHO: Línea divisoria con el contenido central */
+    border-right: 1px solid #ccc;
+}
+
+/* Columna Central (560px) */
+#main-content {
+    float: left;
+    width: 560px;
+    padding: 10px;
+    /* BORDE DERECHO: Línea divisoria con la columna derecha */
+    border-right: 1px solid #ccc;
+}
+
+/* Columna Derecha (200px) */
+#right-sidebar {
+    float: left;
+    width: 200px;
+    padding: 10px;
+}
+
+/* Pie de Página: Línea divisoria superior */
+#footer {
+    margin-top: 25px;
+    padding: 10px 0;
+    /* BORDE SUPERIOR: Línea divisoria */
+    border-top: 1px solid #ccc;
+    text-align: right;
+    font-size: 0.9em;
+}
+
+/* Placeholder de imagen (para referencia visual) */
+.image-placeholder {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-color: #f9f9f9;
+    /* BORDE DE LA IMAGEN: Recuadro alrededor del placeholder */
+    border: 1px solid #777; 
+    margin: 0 10px 10px 0; 
+}
+
+.footer-links {
+    float: left;
+}

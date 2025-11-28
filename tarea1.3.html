@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Ejercicio - cuatro párrafos</title>
+<style>
+  /* Declaraciones usadas una sola vez */
+  body {
+    margin: 0;
+    padding: 40px;
+    background: aqua;        /* background:aqua; */
+  }
+
+  /* color:blue; y text-align:center; para párrafos centrados */
+  .centrado {
+    color: blue;             /* color:blue; */
+    text-align: center;      /* text-align:center; */
+    margin: 18px 0;
+    padding: 8px 12px;
+  }
+
+  /* fondo plata para las barras */
+  .barra-plata {
+    background: silver;      /* background:silver; */
+    display: inline-block;   /* para que la barra no ocupe toda la línea si se desea */
+    width: 90%;
+    box-sizing: border-box;
+  }
+
+  /* Párrafo alineado a la derecha en rojo con Verdana 20px */
+  .derecha-importante {
+    color: red;              /* color:red; */
+    text-align: right;       /* text-align:right; */
+    font-family: Verdana, Geneva, sans-serif; /* font-family:verdana; */
+    font-size: 20px;         /* font-size:20px; */
+    margin: 24px 0;
+    padding: 6px 12px;
+  }
+
+  /* Opcional: centrar el "marco" en la pantalla */
+  .marco {
+    max-width: 520px;
+    margin: 0 auto;
+    border: 2px solid rgba(0,0,0,0.08);
+    background: transparent;
+    padding: 18px;
+  }
+</style>
+</head>
+<body>
+  <div class="marco">
+    <!-- 1. Texto centrado en azul -->
+    <p class="centrado">Texto centrado.</p>
+
+    <!-- 2. Texto centrado sobre fondo de color plata -->
+    <p class="centrado barra-plata">Texto centrado sobre fondo de color plata.</p>
+
+    <!-- 3. Texto alineado a la derecha, rojo, Verdana 20px -->
+    <p class="derecha-importante">Texto alineado a la derecha.</p>
+
+    <!-- 4. Otro texto centrado sobre fondo de color plata -->
+    <p class="centrado barra-plata">Otro texto centrado sobre fondo de color plata.</p>
+  </div>
+</body>
+</html>

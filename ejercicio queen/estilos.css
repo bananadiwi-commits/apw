@@ -1,0 +1,106 @@
+/* Estilo general para todo el cuerpo del documento */
+body {
+    /* Tipo de letra Verdana para todo el documento */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* Un margen para simular el borde del navegador */
+    margin: 20px;
+    padding: 0;
+}
+
+/* Contenedor principal para centrar el contenido y limitar el ancho si fuera necesario, aunque no estrictamente requerido por la imagen */
+.contenedor {
+    max-width: 800px; /* Ancho de ejemplo */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos para la cabecera principal (h1) */
+h1 {
+    color: #333;
+    font-size: 20px;
+}
+
+/* Estilos para las cabeceras secundarias (h2) */
+h2 {
+    color: #666;
+    font-size: 16px;
+    margin-top: 25px; /* Espacio superior para separar secciones */
+}
+
+/* Estilos para párrafos y elementos de lista (p, li) */
+p, li {
+    color: #000;
+    font-size: 12px;
+}
+
+/* Estilo para la imagen */
+.imagen-queen {
+    width: 400px; /* Tamaño de la imagen: 400px de ancho */
+    height: 200px; /* Tamaño de la imagen: 200px de alto */
+    display: block; /* Para que la imagen ocupe su propia línea */
+    margin-bottom: 20px; /* Espacio después de la imagen */
+}
+
+/* Estilos para el título de la tabla (caption) */
+.discografia caption {
+    color: #000;
+    font-size: 14px;
+    margin-bottom: 5px;
+    text-align: left; /* Alineación del título de la tabla */
+}
+
+/* Estilos de la tabla */
+.discografia {
+    /* Borde de la tabla: 1px, color negro */
+    border: 1px solid #000;
+    border-collapse: collapse; /* Para que los bordes de las celdas se fusionen */
+    width: 60%; /* Ancho de ejemplo para la tabla */
+    margin-top: 10px;
+}
+
+/* Estilos para las celdas (td y th) */
+.discografia th, .discografia td {
+    /* Borde de celda: 1px, color negro */
+    border: 1px solid #000;
+    /* Espacio entre el contenido y el borde: 10px */
+    padding: 10px; 
+    text-align: left; /* Alineación del texto dentro de las celdas */
+}
+
+/* Estilos para la cabecera de la tabla (thead) */
+.discografia thead th {
+    /* Color de fondo: #666 */
+    background-color: #666;
+    /* Color del texto: white */
+    color: white;
+    font-size: 12px;
+}
+
+/* Estilos para el cuerpo de la tabla (tbody) */
+.discografia tbody {
+    /* Color de fondo: #fff */
+    background-color: #fff;
+    /* Color del texto: #000 */
+    color: #000;
+    font-size: 12px;
+}
+
+/* Estilos para el pie de la tabla (tfoot) */
+.discografia tfoot {
+    /* Color de fondo: #ccc */
+    background-color: #ccc;
+    /* Color del texto: #000 */
+    color: #000;
+    font-size: 12px;
+}
+
+/* Estilos para el enlace (a) */
+a {
+    color: blue;
+    font-size: 12px;
+    text-decoration: none; /* Quitar el subrayado predeterminado */
+}
+
+a:hover {
+    text-decoration: underline; /* Subrayado al pasar el ratón */
+}

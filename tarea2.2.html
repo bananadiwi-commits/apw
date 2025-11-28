@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio CSS - Página ejemplo</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #ffffff;
+      color: #333333;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      line-height: 1.45;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 80px auto 60px;
+      padding: 0 24px;
+    }
+
+    .top-note {
+      font-size: 12px;
+      color: #0a4a4a;
+      margin-bottom: 40px;
+    }
+
+    .hr-thick {
+      height: 8px;
+      background: #222222;
+      border: 0;
+      margin: 40px 0 60px;
+      box-shadow: 0 1px 0 rgba(0,0,0,0.15) inset;
+    }
+
+    h1 {
+      margin: 0 0 12px 0;
+      font-size: 36px;
+      color: #0b7b78;
+      font-weight: 700;
+      letter-spacing: 0.2px;
+    }
+
+    p {
+      margin: 0 0 14px 0;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .highlight, strong {
+      color: #d04a3a;
+      font-weight: 600;
+    }
+
+    a {
+      color: #1a0dab;
+      text-decoration: underline;
+    }
+
+    .subtitle-link {
+      color: #1a3ee0;
+      font-size: 18px;
+      display: block;
+      margin: 8px 0 12px;
+    }
+
+    .small-muted {
+      color: #6a9a94;
+      font-size: 13px;
+    }
+
+    .styled-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 18px;
+      font-size: 13px;
+      table-layout: auto;
+    }
+
+    .styled-table th,
+    .styled-table td {
+      border: 2px solid #2f8a53;
+      padding: 6px 8px;
+      vertical-align: top;
+    }
+
+    .styled-table thead th {
+      background: #fdeca1;
+      font-weight: 700;
+      text-align: left;
+    }
+
+    .styled-table tbody tr:nth-child(odd) td {
+      background: #ffffff;
+    }
+
+    .cell-alert {
+      background: #ffefef;
+      color: #9a1f1f;
+      font-weight: 600;
+    }
+
+    .table-note {
+      font-size: 12px;
+      color: #666666;
+      margin-top: 8px;
+    }
+
+    .content-block {
+      margin-top: 28px;
+    }
+
+    @media (max-width: 640px) {
+      .container { padding: 0 12px; margin: 40px 12px; }
+      h1 { font-size: 28px; }
+      .hr-thick { margin: 30px 0; }
+      .styled-table th, .styled-table td { font-size: 12px; padding: 5px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <p class="top-note">
+      <a href="#">A partir del código HTML proporcionado, añadir las reglas CSS necesarias para que la página resultante tenga el mismo aspecto que el de la siguiente imagen:</a>
+    </p>
+
+    <div class="hr-thick"></div>
+
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p>
+      Nulla pretium. Sed tempus nunc vitae neque.
+      <strong>Suspensise gravida</strong>, metus a scelerisque sollicitudin, lacus velit ultrices nisl,
+      nonummy tempus neque diam quis felis.
+      <a href="#">Etiam sagittis tortor</a> sed arcu sagittis tristique.
+    </p>
+
+    <a class="subtitle-link" href="#">Aliquam tincidunt, sem eget volutpat porta</a>
+
+    <p>
+      Vivamus turpis del, placerat vel, feugiat in, ornare et, urna.
+      <a href="#">Aenean turpis metus, aliquam non, tristique in</a>, pretium varius, sapien.
+      Proin vitae nisi. Suspendisse porttitor purus ac elit.
+      Suspendisse eleifend odio et dui. In in elit sed metus pretium elementum.
+    </p>
+
+    <table class="styled-table">
+      <thead>
+        <tr>
+          <th>Título columna 1</th>
+          <th>Título columna 2</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Fila 1</td>
+          <td>Donec purus ipsum</td>
+        </tr>
+        <tr>
+          <td class="cell-alert">Título fila 2</td>
+          <td>Curabitur blandit</td>
+        </tr>
+        <tr>
+          <td>Donec purus ipsum</td>
+          <td>Curabitur blandit</td>
+        </tr>
+        <tr>
+          <th>Título columna 1</th>
+          <th>Título columna 2</th>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="content-block">
+      <p>
+        Donec purus ipsum, posuere id, venenatis at, placerat ac, lorem. Curabitur blandit,
+        eros sed gravida aliquet, risus justo porta lorem, ut mollis lectus tortor in orci.
+        <a href="#">Pellentesque nec augue.</a>
+      </p>
+
+      <p>
+        Fusce nec felis eu diam pretium adipiscing.
+        <a href="#">Nunc elit velit, vehicula volutpat</a>,
+        venenatis in, posuere id, lorem.
+        Aenean sagittis, tellus in ultrices accumsan, diam nisl egestas augue, eu vulputate magna eros eu erat.
+      </p>
+
+      <p>
+        <a href="#">Donec accumsan</a>, pede ac pretium tincidunt, ante nulla aliquam risus,
+        vitae placerat pede sem sit amet enim. Suspendisse volutpat. Nulla facilisi.
+        Ut ullamcorper nisi quis mi.
+      </p>
+    </div>
+
+  </div>
+
+</body>
+</html>
+

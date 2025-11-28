@@ -1,0 +1,93 @@
+/*
+ * REINICIO BÁSICO Y REGLAS DE CAJA
+ */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*
+ * REGLAS DE MÁRGENES Y RELLENOS
+ */
+
+#wrapper {
+    width: 960px;
+    margin: 0 auto; 
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 15px 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+#content-area {
+    overflow: hidden; 
+}
+
+#left-sidebar {
+    float: left;
+    width: 200px;
+    margin-right: 20px;
+}
+
+#main-content {
+    float: left;
+    width: 520px;
+    margin-right: 20px;
+    padding: 10px;
+    border: 1px solid #eee;
+}
+
+#right-sidebar {
+    float: left;
+    width: 200px;
+    padding: 10px;
+}
+
+#footer {
+    margin-top: 25px;
+    padding: 10px 0;
+    border-top: 1px solid #ccc;
+    text-align: right;
+    font-size: 0.9em;
+}
+
+/* * ESTILOS ADICIONALES
+ */
+
+.box {
+    background-color: #f9f9f9;
+    padding: 15px; 
+    margin-bottom: 15px; 
+    border: 1px solid #ddd;
+}
+
+.box h3 {
+    margin-top: 0;
+}
+
+.image-placeholder {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    border: 1px solid #777;
+    margin: 0 10px 10px 0; 
+}
+
+.footer-links {
+    float: left;
+}
